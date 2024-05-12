@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Drag and Drop Puzzle</h2>
+    <p>Drag the words into the correct category box:</p>
+    
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Category 1</p>
+    </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Category 2</p>
+    </div>
+    <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Category 3</p>
+    </div>
+    <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <p>Category 4</p>
+    </div>
+    <br>
+    <div id="words">
+        <p class="draggable" draggable="true" id="drag1" ondragstart="drag(event)">Word 1</p>
+        <p class="draggable" draggable="true" id="drag2" ondragstart="drag(event)">Word 2</p>
+        <p class="draggable" draggable="true" id="drag3" ondragstart="drag(event)">Word 3</p>
+        <!-- Add more words as needed -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
